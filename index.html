@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employees page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <h2>Add Employee</h2>
+        <form class="needs-validation" novalidate id="form-employees">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="name@example.com">
+
+            <label for="exampleInputEPhone">Phone Number</label>
+            <input type="text" class="form-control" id="exampleInputEPhone" aria-describedby="emailHelp"
+              placeholder="+XXX-XX-XX-XX">
+
+            <label for="inputCity">Country</label>
+            <select class="form-control" id="selectCity">
+              <option value="">-- Select Country--</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Chine">Chine</option>
+              <option value="Germany">Germany</option>
+
+
+            </select>
+
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender">
+              <option value="" selected>--Select Gender--</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+
+
+            <!--
+            <div class="form-check form-check-inline mt-2">
+              <input class="form-check-input" type="radio" checked name="inlineRadioOptions" id="inlineRadio1"
+                value="option1">
+              <label class="form-check-label" for="inlineRadio1">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Male</label>
+            </div>-->
+            <button type="submi" class="btn btn-primary mt-4 d-block" id="submit">Submit</button>
+
+          </div>
+        </form>
+
+      </div>
+      <div class="col-md-8 col-12">
+        <h2>List Of Employees</h2>
+
+        <table class="table" id="tableEmployees">
+          <thead>
+            <tr>
+              <th scope="col">Photo</th>
+              <th scope="col">Name</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Email</th>
+              <th scope="col">Country</th>
+              <th scope="col">Edit Button</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+  <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
